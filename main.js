@@ -91,8 +91,7 @@ function submitBtn() {
         setTimeout(function(){ toast.className = toast.className.replace("show", ""); }, 3000);
     }
 
-    if (firstName && firstName.value && lastName && lastName.value && /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.getElementById("emailInput").value) && document.getElementById("option1").className == "option-1 active" || document.getElementById("option2").className == "option-2 active" && message && message.value && checkBox && checkBox.checked) {
-        console.log("Halo");
+    if (firstName && firstName.value && lastName && lastName.value && /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.getElementById("emailInput").value) && document.getElementById("option1").className == "option-1 active" && message && message.value && checkBox && checkBox.checked || document.getElementById("option2").className == "option-2 active" && message && message.value && checkBox && checkBox.checked) {
         toastfunc()
     }
 }
