@@ -80,9 +80,9 @@ function submitBtn() {
     let toast = document.getElementById("toastNotif");
     let firstName = document.getElementById("firstName");
     let lastName = document.getElementById("lastName");
-    let email = document.getElementById("emailInput");
-    let radio1 = document.getElementById("optInput1");
-    let radio2 = document.getElementById("optInput2");
+    // let email = document.getElementById("emailInput");
+    // let radio1 = document.getElementById("optInput1");
+    // let radio2 = document.getElementById("optInput2");
     let message = document.getElementById("messageInput");
     let checkBox = document.getElementById("checkBoxInput"); 
 
