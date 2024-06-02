@@ -48,6 +48,7 @@ body {
     font-size: 16px;
     font-weight: 600;
     color: var(--DarkGrey);
+    cursor: default;
 }
 /* Name Section */
 
@@ -78,6 +79,7 @@ body {
     height: 2.5rem;
     border: 1px solid var(--MediumGrey);
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .form-container .name-section .first-name-section input:focus {
@@ -106,6 +108,7 @@ body {
     height: 2.5rem;
     border: 1px solid var(--MediumGrey);
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .form-container .name-section .last-name-section input:focus {
@@ -136,6 +139,7 @@ body {
     width: 32rem;
     border: 1px solid var(--MediumGrey);
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .form-container .email-section input:focus {
@@ -153,6 +157,7 @@ body {
 
 .form-container .query-section p {
     font-size: 14px;
+    cursor: default;
 }
 
 .form-container .query-section p span {
@@ -186,6 +191,7 @@ body {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    cursor: pointer;
 }
 
 .form-container .query-section .query-input-section .option-1-wrapper .option-1 label .circle {
@@ -227,6 +233,7 @@ body {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    cursor: pointer;
 }
 
 .form-container .query-section .query-input-section .option-2-wrapper .option-2 label .circle {
@@ -267,6 +274,7 @@ body {
     border: 1px solid var(--MediumGrey);
     border-radius: 5px;
     resize: none;
+    cursor: pointer;
 }
 
 .form-container .message-section textarea:focus {
@@ -323,6 +331,7 @@ body {
     padding: 12px;
     font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .form-container .submit-btn:hover {

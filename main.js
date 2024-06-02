@@ -18,7 +18,7 @@ function opt2Func() {
 
 function checkFunc() {
     document.getElementById("boxSvg").classList.toggle("active");
-    document.getElementById("boxCheck").classList.toggle("active")
+    document.getElementById("boxCheck").classList.toggle("active");
 }
 
 function submitBtn() {
@@ -80,9 +80,9 @@ function submitBtn() {
     let toast = document.getElementById("toastNotif");
     let firstName = document.getElementById("firstName");
     let lastName = document.getElementById("lastName");
-    // let email = document.getElementById("emailInput");
-    // let radio1 = document.getElementById("optInput1");
-    // let radio2 = document.getElementById("optInput2");
+    let email = document.getElementById("emailInput");
+    let radio1 = document.getElementById("opt1Input");
+    let radio2 = document.getElementById("opt2Input");
     let message = document.getElementById("messageInput");
     let checkBox = document.getElementById("checkBoxInput"); 
 
@@ -93,5 +93,24 @@ function submitBtn() {
 
     if (firstName && firstName.value && lastName && lastName.value && /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.getElementById("emailInput").value) && document.getElementById("option1").className == "option-1 active" && message && message.value && checkBox && checkBox.checked || document.getElementById("option2").className == "option-2 active" && message && message.value && checkBox && checkBox.checked) {
         toastfunc()
+    }
+
+    if (toast.className == "toaster show") {
+        firstName.value = "";
+        lastName.value = "";
+        email.value = "";
+        radio1.checked = false;
+        document.getElementById("option1").classList.remove("active");
+        document.getElementById("checkSvg1").style.display = "none";
+        document.getElementById("circleCheck1").style.display = "block";
+        radio2.checked = false;
+        document.getElementById("option2").classList.remove("active");
+        document.getElementById("checkSvg2").style.display = "none";
+        document.getElementById("circleCheck2").style.display = "block";
+        message.value = "";
+        checkBox.checked = false;
+        document.getElementById("boxSvg").classList.remove("active");
+        document.getElementById("boxCheck").classList.remove("active");
+
     }
 }
