@@ -90,8 +90,9 @@ function submitBtn() {
         toast.classList.add("show")
         setTimeout(function(){ toast.className = toast.className.replace("show", ""); }, 3000);
     }
-        
-    if (firstName && firstName.value, lastName && lastName.value, /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.getElementById("emailInput").value), radio1 && radio1.checked == true, radio2 && radio2.checked == true ,message && message.value, checkBox && checkBox.checked) {
+
+    if (firstName && firstName.value, lastName &&lastName.value, /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.getElementById("emailInput").value), radio1 && radio1.checked ,message && message.value, checkBox && checkBox.checked) {
+        console.log("Halo");
         toastfunc()
     }
 }
